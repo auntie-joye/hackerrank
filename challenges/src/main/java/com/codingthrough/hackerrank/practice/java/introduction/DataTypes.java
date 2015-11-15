@@ -29,8 +29,8 @@ import java.util.Scanner;
  * <p>
  * Output Format
  * <p>
- * For each n, list all the datatypes it can be fitted into ordered by the size of
- * the datatype. If it can't be fitted into any of these datatypes, print "n can't
+ * For each n, list all the data types it can be fitted into ordered by the size of
+ * the data type. If it can't be fitted into any of these data types, print "n can't
  * be fitted anywhere." See the sample output for the exact formatting.
  * <p>
  * Sample Input
@@ -59,30 +59,32 @@ import java.util.Scanner;
  * Explanation
  * <p>
  * -150 can be fitted in a short or in an int or in a long.
- * 213333333333333333333333333333333333 is way too large to fit in any datatypes mentioned in the problem statement.
+ * 213333333333333333333333333333333333 is way too large to fit in any data types mentioned in the problem statement.
  */
 public class DataTypes {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        int t = scanner.nextInt();
+        int t = sc.nextInt();
         for (int i = 0; i < t; i++) {
-            if (scanner.hasNextLong()) {
-                long value = scanner.nextLong();
+            if (sc.hasNextLong()) {
+                long value = sc.nextLong();
                 System.out.println(value + " can be fitted in:");
-                tryFitIn(value, Byte.MIN_VALUE, Byte.MAX_VALUE, "byte");
-                tryFitIn(value, Short.MIN_VALUE, Short.MAX_VALUE, "short");
-                tryFitIn(value, Integer.MIN_VALUE, Integer.MAX_VALUE, "int");
-                tryFitIn(value, Long.MIN_VALUE, Long.MAX_VALUE, "long");
+                tryFitValueIn(value, Byte.MIN_VALUE, Byte.MAX_VALUE, Byte.TYPE.toString());
+                tryFitValueIn(value, Short.MIN_VALUE, Short.MAX_VALUE, Short.TYPE.toString());
+                tryFitValueIn(value, Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.TYPE.toString());
+                tryFitValueIn(value, Long.MIN_VALUE, Long.MAX_VALUE, Long.TYPE.toString());
             } else {
-                System.out.println(scanner.next() + " can't be fitted anywhere.");
+                System.out.println(sc.next() + " can't be fitted anywhere.");
             }
         }
     }
 
-    private static void tryFitIn(long value, long min, long max, String type) {
+    private static boolean tryFitValueIn(long value, long min, long max, String type) {
         if (value >= min && value <= max) {
             System.out.println("* " + type);
+            return true;
         }
+        return false;
     }
 }
