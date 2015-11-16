@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /**
  * Problem Statement:
- * <p>
  * Using "if-else" you can perform decision making in Java. This problem
  * will test your knowledge on "if-else" statements.
  * <p>
@@ -17,26 +16,20 @@ import java.util.Scanner;
  * We given you partially completed code in the editor, complete it to solve the problem.
  * <p>
  * Input Format:
- * <p>
  * There is a single line of input: integer N.
  * <p>
  * Constraints:
  * 1?N?100
- * Output Format
- * <p>
+ * Output Format:
  * Print "Weird" if the number is weird. Otherwise, print "Not Weird". Do not print the quotation marks.
  * <p>
- * Sample Input 1
- * <p>
+ * Sample Input 1:
  * 3
- * Sample Output 1
- * <p>
+ * Sample Output 1:
  * Weird
- * Sample Input 2
- * <p>
+ * Sample Input 2:
  * 24
- * Sample Output 2
- * <p>
+ * Sample Output 2:
  * Not Weird
  */
 public class JavaIfElse {

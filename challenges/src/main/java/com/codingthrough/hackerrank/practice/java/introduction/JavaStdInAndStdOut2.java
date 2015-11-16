@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /**
  * Problem Statement:
- * <p>
  * In most of the problems in Hackerrank, you need to
  * read input from stdin or standard input and write your output in stdout or standard output.
  * <p>
@@ -29,13 +28,11 @@ import java.util.Scanner;
  * doesn't read the last newline character of the input, you need
  * to keep this in mind if you use nextLine() after using nextInt().
  * <p>
- * Sample Input
- * <p>
+ * Sample Input:
  * 42
  * 3.1415
  * Welcome to Hackerrank Java tutorials!
- * Sample Output
- * <p>
+ * Sample Output:
  * String: Welcome to Hackerrank Java tutorials!
  * Double: 3.1415
  * Int: 42

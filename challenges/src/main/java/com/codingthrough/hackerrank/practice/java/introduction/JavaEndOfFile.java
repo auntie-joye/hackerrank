@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /**
  * Problem Statement:
- * <p>
  * In computing, End Of File (commonly abbreviated EOF) is a
  * condition in a computer operating system where no more data
  * can be read from a data source. (Wikipedia)
@@ -17,21 +16,17 @@ import java.util.Scanner;
  * Scanner class.
  * <p>
  * Input Format:
- * <p>
  * Each line will contain a non-empty string. Read until EOF.
  * <p>
  * Output Format:
- * <p>
  * For each line, print the line number followed by a single space
  * and the line content.
  * <p>
  * Sample Input:
- * <p>
  * Hello world
  * I am a file
  * Read me until end-of-file.
- * Sample Output
- * <p>
+ * Sample Output:
  * 1 Hello world
  * 2 I am a file
  * 3 Read me until end-of-file.

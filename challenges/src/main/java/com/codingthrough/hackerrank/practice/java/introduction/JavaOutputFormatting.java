@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /**
  * Problem Statement:
- * <p>
  * Java System.out.printf function allows you to print
  * formatted output. This problem will test your knowledge
  * on this topic.

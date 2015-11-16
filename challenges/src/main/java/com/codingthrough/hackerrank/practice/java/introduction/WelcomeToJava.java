@@ -2,7 +2,6 @@ package com.codingthrough.hackerrank.practice.java.introduction;
 
 /**
  * Problem Statement:
- * <p>
  * Welcome to the world of Java! Just print "Hello World."
  * and "Hello Java." in two separate lines to complete this challenge.
  * <p>

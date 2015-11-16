@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /**
  * Problem Statement:
- * <p>
  * In most of the HackerRank challenges, you need to read
  * input from stdin (standard input) and write your output
  * in stdout (standard output).
@@ -19,12 +18,10 @@ import java.util.Scanner;
  * and print them in stdout.
  * <p>
  * Sample input:
- * <p>
  * 42
  * 100
  * 125
  * Sample output:
- * <p>
  * 42
  * 100
  * 125
