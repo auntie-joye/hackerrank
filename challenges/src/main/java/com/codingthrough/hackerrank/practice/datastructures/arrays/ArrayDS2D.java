@@ -68,14 +68,14 @@ import java.util.Scanner;
  */
 public class ArrayDS2D {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int l = 6, c = 6;
         int[][] a = new int[l][c];
 
         for (int i = 0; i < l; i++) {
             for (int j = 0; j < c; j++) {
-                a[i][j] = scanner.nextInt();
+                a[i][j] = sc.nextInt();
             }
         }
 
