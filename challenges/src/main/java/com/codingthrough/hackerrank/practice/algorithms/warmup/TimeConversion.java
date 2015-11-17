@@ -25,16 +25,16 @@ import java.util.Scanner;
  */
 public class TimeConversion {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        String input = scanner.next();
+        String input = sc.next();
 
         String[] parts = input.split(":");
         int hours = Integer.valueOf(parts[0]);
         int minutes = Integer.valueOf(parts[1]);
         int seconds = Integer.valueOf(parts[2].substring(0, 2));
 
-        if (input.contains("PM") && hours != 12) {
+        if (input.contains("PM") && hours < 12) {
             hours += 12;
         }
 

@@ -22,12 +22,12 @@ import java.util.Scanner;
  */
 public class SimpleArraySum {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         long sum = 0;
-        int n = scanner.nextInt();
+        int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
-            sum += scanner.nextInt();
+            sum += sc.nextInt();
         }
 
         System.out.println(sum);

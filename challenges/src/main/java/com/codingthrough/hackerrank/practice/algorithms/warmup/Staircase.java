@@ -27,14 +27,13 @@ import java.util.Scanner;
  */
 public class Staircase {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        int n = scanner.nextInt();
-        for (int i = 0; i < n; i++) {
-            String level = String.format(
-                    String.format("%%%ds", n),
-                    String.format(String.format("%%%ds", i + 1), " ").replace(" ", "#"));
-            System.out.println(level);
+        int n = sc.nextInt();
+        for (int i = 0; i < n - 1; i++) {
+            System.out.println(String.format(String.format("%%%ds%%0%dd", n - i - 1, i + 1), " ", 0).replace("0", "#"));
         }
+
+        System.out.println(String.format(String.format("%%%ds", n), " ").replace(" ", "#"));
     }
 }

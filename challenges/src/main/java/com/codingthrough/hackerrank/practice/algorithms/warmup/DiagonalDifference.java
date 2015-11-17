@@ -49,13 +49,13 @@ import java.util.Scanner;
  */
 public class DiagonalDifference {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int sumL = 0, sumR = 0;
-        int n = scanner.nextInt();
+        int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                int value = scanner.nextInt();
+                int value = sc.nextInt();
                 if (i == j) {
                     sumL += value;
                 }

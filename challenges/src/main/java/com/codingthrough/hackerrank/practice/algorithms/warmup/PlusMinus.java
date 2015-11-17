@@ -33,12 +33,12 @@ import java.util.Scanner;
  */
 public class PlusMinus {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        int n = scanner.nextInt();
+        int n = sc.nextInt();
         int pN = 0, mN = 0, zN = 0;
         for (int i = 0; i < n; i++) {
-            int value = scanner.nextInt();
+            int value = sc.nextInt();
             if (value < 0) {
                 mN++;
             } else if (value > 0) {
